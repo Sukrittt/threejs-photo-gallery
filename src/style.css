@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
 *
 {
     margin: 0;
@@ -8,7 +10,8 @@ html,
 body
 {
     height: 100vh;
-    font-family: 'Poppins';
+    font-family: 'Playfair Display', serif;
+    background-color: whitesmoke;
 }
 
 .webgl
@@ -17,4 +20,26 @@ body
     top: 0;
     left: 0;
     outline: none;
+}
+
+.content{
+    position: absolute;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: 5em;
+    font-weight: lighter;
+    margin-left: 10vw;
+}
+
+@media screen and (width <=750px) {
+    h1{
+        font-size: 3em;
+        margin-left: 5vw;
+    }
 }
